@@ -9,10 +9,7 @@ def Add():
     for row in range(y, sheet.max_row + 1):
         x = int(input(f"Enter the value you want to Add for Row {row} with the origianl value: "))
         cell = sheet.cell(row, z)
-        print(type(cell))
         corrected_cell_price = cell.value + x
-        print(type(corrected_cell_price))
-        print(corrected_cell_price)
         corrected_cell = sheet.cell(row,m)
         corrected_cell.value = corrected_cell_price
     wb.save('')  # You can save the file formate with any name
