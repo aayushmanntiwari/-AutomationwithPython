@@ -1,7 +1,7 @@
 import openpyxl as xl
 # Add function
 def Add():
-    wb = xl.load_workbook('transactions.xlsx')  # write the spreedsheet(.xlsx) file name here you to Update
+    wb = xl.load_workbook('')  # write the spreedsheet(.xlsx) file name here you to Update
     sheet = wb['Sheet1']
     y = int(input("Enter the targeted row where value start: "))
     z = int(input("Enter the target column where these value belong: "))
@@ -15,4 +15,4 @@ def Add():
         print(corrected_cell_price)
         corrected_cell = sheet.cell(row,m)
         corrected_cell.value = corrected_cell_price
-    wb.save('transactions.xlsx')  # You can save the file formate with any name
+    wb.save('')  # You can save the file formate with any name
